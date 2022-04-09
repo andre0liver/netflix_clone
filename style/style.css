@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    background-image: url(/img/background.png);
+    height: 768px;
+}
+
+.nav_bar {
+    background: rgb(10,10,10);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 4%, rgba(10,10,10,0.2) 91%, rgba(10,10,10,0.1) 97%, rgba(10,10,10,0.05085784313725494) 100%);}
+
+.nav_itens {
+    padding: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+.opt {
+    padding: 10px;
+    font-size: 12px;
+}
+
+ul, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+
+.main {
+    background: rgb(10,10,10);
+    background: linear-gradient(0deg, rgba(10,10,10,1) 75%, rgba(10,10,10,0.2) 91%, rgba(10,10,10,0.1) 97%, rgba(10,10,10,0.05085784313725494) 100%);
+    position: relative;    
+    top: -210px;
+}
+
+.genders {
+    margin-left: 50px;
+}
+
+.gender_titles {
+    color: white;
+}
+
+.titles {
+    display: flex;
+}
+
+.titles_img {
+    width: 227px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+.titles_img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
