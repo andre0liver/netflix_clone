@@ -10,13 +10,15 @@ body {
 }
 
 .container {
-    background-image: url(/img/background.png);
+    background:rgba(0,0,0,0.4) url(/img/background.png);
+    background-blend-mode: darken;
     height: 768px;
 }
 
 .nav_bar {
     background: rgb(10,10,10);
-    background: linear-gradient(180deg, rgba(10,10,10,1) 4%, rgba(10,10,10,0.2) 91%, rgba(10,10,10,0.1) 97%, rgba(10,10,10,0.05085784313725494) 100%);}
+    background: linear-gradient(180deg, rgba(10,10,10,1) 4%, rgba(10,10,10,0.2) 91%, rgba(10,10,10,0.1) 97%, rgba(10,10,10,0.05085784313725494) 100%);
+}
 
 .nav_itens {
     padding: 10px;
@@ -24,6 +26,11 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+.opt:hover {
+    color: rgb(150,150,150);
+    transition: 0.2s ease-in;
 }
 
 .logo {
@@ -43,6 +50,42 @@ ul, a {
     text-decoration: none;
     color: white;
     padding: 0;
+}
+
+.info {
+    width: 440px;
+    position: relative;
+    top: 130px;
+    margin-left: 50px;
+}
+
+.info_description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.info ul {
+    margin-top: 20px;
+}
+
+.info_buttons {
+    display: inline;
+    margin-right: 5px;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+
+.info_buttons:hover {
+    background-color: rgba(150,150,150,0.9);
+}
+
+.more_button {
+    background-color: rgba(50,50,50, 0.7);
+}
+
+#watch {
+    color: #000;
 }
 
 .main {
@@ -73,4 +116,5 @@ ul, a {
 .titles_img:hover {
     transform: scale(1.1); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: 0.1s ease-in;
 }
